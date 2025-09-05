@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Thapa - Software Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* 3D Hover Effect */
+    .card {
+      transform-style: preserve-3d;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) rotateX(5deg) rotateY(-5deg);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Fade animation */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease-in-out;
+    }
+
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-md shadow-lg z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-blue-400">Roman Thapa</h1>
+      <nav class="space-x-6 font-medium" aria-label="Main Navigation">
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#skills" class="hover:text-blue-400">Skills</a>
+        <a href="#projects" class="hover:text-blue-400">Projects</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center relative px-6">
+    <div class="bg-gray-800/80 backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-2xl fade-up">
+      <!-- Profile Image -->
+      <img src="imagee/profile.jpg" alt="Roman Thapa Profile Picture"
+        class="w-40 h-40 rounded-full border-4 border-blue-400 shadow-xl mx-auto mb-6">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-400">Roman Thapa</span></h2>
+      <p class="text-lg md:text-2xl text-gray-300 mb-6">Aspiring Software Developer | BCA Student | Innovator</p>
+      <a href="#contact"
+        class="bg-blue-400 text-gray-900 px-6 py-3 rounded-full shadow-md hover:bg-blue-500 transition">Get in
+        Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-20 px-6 fade-up">
+    <h3 class="text-3xl font-bold text-center mb-8 text-blue-400">About Me</h3>
+    <p class="max-w-3xl mx-auto text-center text-gray-300 text-lg leading-relaxed">
+      I am <span class="text-blue-400 font-semibold">Roman Thapa</span>, a highly motivated Bachelor in Computer
+      Applications (BCA) student with a strong passion for software development and problem-solving. My expertise
+      lies in creating efficient, scalable, and user-friendly applications. I am dedicated to learning new
+      technologies, delivering quality solutions, and contributing to innovative projects that make a meaningful
+      impact in the tech industry.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 px-6 bg-gray-800/70 backdrop-blur-lg fade-up">
+    <h3 class="text-3xl font-bold text-center mb-12 text-blue-400">My Skills</h3>
+    <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+      <!-- Left Column -->
+      <div class="space-y-6">
+        <div>
+          <h4 class="text-xl font-semibold">Programming Languages</h4>
+          <div class="w-full bg-gray-700 rounded-full h-4">
+            <div class="bg-blue-400 h-4 rounded-full" style="width: 90%"></div>
+          </div>
+          <p class="text-gray-300 mt-1">C, C++, Python, JavaScript</p>
+        </div>
+
+        <div>
+          <h4 class="text-xl font-semibold">Web Development</h4>
+          <div class="w-full bg-gray-700 rounded-full h-4">
+            <div class="bg-blue-400 h-4 rounded-full" style="width: 85%"></div>
+          </div>
+          <p class="text-gray-300 mt-1">HTML, CSS, Tailwind, React</p>
+        </div>
+
+        <div>
+          <h4 class="text-xl font-semibold">Database & Other Skills</h4>
+          <div class="w-full bg-gray-700 rounded-full h-4">
+            <div class="bg-blue-400 h-4 rounded-full" style="width: 75%"></div>
+          </div>
+          <p class="text-gray-300 mt-1">SQL, UI/UX Design, Problem Solving</p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="space-y-6">
+        <div>
+          <h4 class="text-xl font-semibold">Version Control</h4>
+          <div class="w-full bg-gray-700 rounded-full h-4">
+            <div class="bg-blue-400 h-4 rounded-full" style="width: 80%"></div>
+          </div>
+          <p class="text-gray-300 mt-1">Git, GitHub</p>
+        </div>
+
+        <div>
+          <h4 class="text-xl font-semibold">Soft Skills</h4>
+          <div class="w-full bg-gray-700 rounded-full h-4">
+            <div class="bg-blue-400 h-4 rounded-full" style="width: 85%"></div>
+          </div>
+          <p class="text-gray-300 mt-1">Teamwork, Communication, Critical Thinking</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto py-20 px-6 fade-up">
+    <h3 class="text-3xl font-bold text-center mb-12 text-blue-400">Projects</h3>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <article class="card bg-gray-800/70 backdrop-blur-lg rounded-2xl overflow-hidden shadow-xl">
+        <img src="https://t4.ftcdn.net/jpg/01/71/23/49/360_F_171234990_cSNErNz2LkXTP7YxMNzRY3jDhz0laMa2.jpg" alt="Gym Management System Screenshot" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold text-blue-400 mb-2">Gym Management System</h4>
+          <p class="text-gray-300">A comprehensive application to manage gym memberships, schedules, and payment
+            tracking efficiently.</p>
+        </div>
+      </article>
+
+      <article class="card bg-gray-800/70 backdrop-blur-lg rounded-2xl overflow-hidden shadow-xl">
+        <img src="https://tinyterrier.com/wp-content/uploads/2019/08/reasons-to-adopt-a-rescue-dog.jpg" alt="Pet Rescue Call Website Screenshot" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold text-blue-400 mb-2">Pet Rescue Call Website</h4>
+          <p class="text-gray-300">A responsive platform to help users request and coordinate pet rescue services
+            efficiently.</p>
+        </div>
+      </article>
+
+      <article class="card bg-gray-800/70 backdrop-blur-lg rounded-2xl overflow-hidden shadow-xl">
+        <img src="imagee/portfolio.jpg" alt="Personal Portfolio Screenshot" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold text-blue-400 mb-2">Personal Portfolio</h4>
+          <p class="text-gray-300">My modern portfolio website showcasing my skills, projects, and professional
+            profile.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 text-center bg-gray-800/70 backdrop-blur-lg fade-up">
+    <h3 class="text-3xl font-bold mb-8 text-blue-400">Contact Me</h3>
+    <p class="text-lg text-gray-300 mb-6">Interested in collaborating? Reach me at:</p>
+    <a href="mailto:connect.romanthapa@gmail.com"
+      class="bg-blue-400 text-gray-900 px-6 py-3 rounded-full shadow-md hover:bg-blue-500 transition">📧 Email Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6">
+    <p>&copy; 2025 Roman Thapa. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS for fade-up animation -->
+  <script>
+    const fadeElems = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+    fadeElems.forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>
